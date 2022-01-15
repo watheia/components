@@ -51,8 +51,30 @@ importers:
       '@types/react-dom': ^17.0.5
       '@types/testing-library__jest-dom': 5.9.5
       '@typescript-eslint/eslint-plugin': 4.29.3
+      '@waweb/base-ui.elements.icon': 0.1.1
+      '@waweb/base-ui.input.error': 0.1.1
+      '@waweb/base-ui.layout.breakpoints': 0.1.0
+      '@waweb/base-ui.layout.grid-component': 0.1.0
+      '@waweb/base-ui.routing.compare-url': 0.1.1
+      '@waweb/base-ui.routing.link': 0.1.1
+      '@waweb/base-ui.routing.native-link': 0.1.1
+      '@waweb/base-ui.routing.native-nav-link': 0.1.1
+      '@waweb/base-ui.routing.routing-provider': 0.1.1
+      '@waweb/base-ui.text.heading': 0.1.1
+      '@waweb/base-ui.text.text-sizes': 0.1.0
+      '@waweb/base-ui.theme.brand-definition': 0.1.0
+      '@waweb/base-ui.theme.color-definition': 0.1.0
+      '@waweb/base-ui.theme.colors': 0.1.0
+      '@waweb/base-ui.theme.fonts.book': 0.1.0
+      '@waweb/base-ui.theme.fonts.roboto': 0.1.0
+      '@waweb/base-ui.theme.heading-margin-definition': 0.1.0
+      '@waweb/base-ui.theme.icons-font': 0.1.0
+      '@waweb/base-ui.theme.shadow-definition': 0.1.0
+      '@waweb/base-ui.theme.size-definition': 0.1.0
+      '@waweb/base-ui.theme.sizes': 0.1.0
+      '@waweb/base-ui.theme.theme-provider': 0.1.0
+      '@waweb/base-ui.utils.is-browser': 0.1.0
       chai: 4.3.0
-      classnames: 2.3.1
       clsx: 1.1.1
       copy-to-clipboard: 3.3.1
       core-js: ^3.0.0
@@ -115,7 +137,29 @@ importers:
       '@teambit/mdx.ui.mdx-scope-context': registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context/0.0.368_react-dom@17.0.2+react@17.0.2
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/4.29.3
-      classnames: registry.npmjs.org/classnames/2.3.1
+      '@waweb/base-ui.elements.icon': 0.1.1_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.input.error': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.layout.breakpoints': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.layout.grid-component': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.routing.compare-url': 0.1.1_0f78d4402c65c297154ea304700b01fa
+      '@waweb/base-ui.routing.link': 0.1.1_ba56863e2a61708d7a7282472432a374
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.routing.native-nav-link': 0.1.1_ba56863e2a61708d7a7282472432a374
+      '@waweb/base-ui.routing.routing-provider': 0.1.1_ba56863e2a61708d7a7282472432a374
+      '@waweb/base-ui.text.heading': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.text.text-sizes': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.colors': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.roboto': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.icons-font': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.shadow-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.size-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.sizes': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.theme-provider': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.utils.is-browser': 0.1.0
       clsx: registry.npmjs.org/clsx/1.1.1
       copy-to-clipboard: registry.npmjs.org/copy-to-clipboard/3.3.1
       core-js: registry.npmjs.org/core-js/3.20.3
@@ -147,73 +191,446 @@ importers:
     specifiers: {}
 
   base-ui/input/error:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      classnames: 2.3.1
+      core-js: ^3.0.0
+    dependencies:
+      classnames: registry.npmjs.org/classnames/2.3.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/layout/breakpoints:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/layout/grid-component:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      '@waweb/base-ui.layout.breakpoints': 0.1.0
+      clsx: 1.1.1
+      core-js: ^3.0.0
+    dependencies:
+      '@waweb/base-ui.layout.breakpoints': 0.1.0_react-dom@17.0.2+react@17.0.2
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/routing/compare-url:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/routing/link:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/routing/native-link:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/routing/native-nav-link:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      '@waweb/base-ui.routing.compare-url': 0.1.1
+      '@waweb/base-ui.routing.native-link': 0.1.1
+      classnames: 2.3.1
+      core-js: ^3.0.0
+    dependencies:
+      '@waweb/base-ui.routing.compare-url': 0.1.1_0f78d4402c65c297154ea304700b01fa
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      classnames: registry.npmjs.org/classnames/2.3.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/routing/routing-provider:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      '@waweb/base-ui.routing.native-link': 0.1.1
+      '@waweb/base-ui.routing.native-nav-link': 0.1.1
+      core-js: ^3.0.0
+    dependencies:
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.routing.native-nav-link': 0.1.1_ba56863e2a61708d7a7282472432a374
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/text/heading:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/text/paragraph:
     specifiers: {}
 
   base-ui/text/text-sizes:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/brand-definition:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/color-definition:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/colors:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/fonts/book:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/fonts/roboto:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/heading-margin-definition:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/icons-font:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/shadow-definition:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/size-definition:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/sizes:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      core-js: ^3.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/theme/theme-provider:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': ^26.0.0
+      '@types/node': 12.20.4
+      '@types/react': ^17.0.8
+      '@types/react-dom': ^17.0.5
+      '@types/testing-library__jest-dom': 5.9.5
+      '@waweb/base-ui.theme.brand-definition': 0.1.0
+      '@waweb/base-ui.theme.color-definition': 0.1.0
+      '@waweb/base-ui.theme.fonts.book': 0.1.0
+      '@waweb/base-ui.theme.heading-margin-definition': 0.1.0
+      '@waweb/base-ui.theme.shadow-definition': 0.1.0
+      '@waweb/base-ui.theme.size-definition': 0.1.0
+      clsx: 1.1.1
+      core-js: ^3.0.0
+    dependencies:
+      '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.shadow-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.size-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
   base-ui/utils/is-browser:
-    specifiers: {}
+    specifiers:
+      '@babel/runtime': 7.12.18
+      '@types/jest': 26.0.20
+      '@types/node': 12.20.4
+    devDependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+      '@types/node': registry.npmjs.org/@types/node/12.20.4
 
   demo/content/hello-world:
     specifiers: {}
@@ -297,6 +714,290 @@ importers:
     specifiers: {}
 
 packages:
+
+  /@waweb/base-ui.elements.icon/0.1.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-8gdfplcgFdN4uPbtdmZnBH/9Y+Y=, tarball: '@waweb/base-ui.elements.icon/-/@waweb-base-ui.elements.icon-0.1.1.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.input.error/0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c:
+    resolution: {integrity: sha1-ROu676c0JpOHHFCO3cJKM0YVU+A=, tarball: '@waweb/base-ui.input.error/-/@waweb-base-ui.input.error-0.1.1.tgz'}
+    peerDependencies:
+      '@testing-library/react': ^12.0.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
+      classnames: registry.npmjs.org/classnames/2.3.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.layout.breakpoints/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-bngGyXSfekofmOcBiqyzUY5bb6U=, tarball: '@waweb/base-ui.layout.breakpoints/-/@waweb-base-ui.layout.breakpoints-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.layout.grid-component/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-4LsTTAzJ1StFFH2UtXuxv9fCPbE=, tarball: '@waweb/base-ui.layout.grid-component/-/@waweb-base-ui.layout.grid-component-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.layout.breakpoints': 0.1.0_react-dom@17.0.2+react@17.0.2
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.routing.compare-url/0.1.1_0f78d4402c65c297154ea304700b01fa:
+    resolution: {integrity: sha1-liwdtzV1gMU9pcJYEm1saCpr1Ck=, tarball: '@waweb/base-ui.routing.compare-url/-/@waweb-base-ui.routing.compare-url-0.1.1.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+      url-parse: ^1.5.4
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+      url-parse: registry.npmjs.org/url-parse/1.5.4
+    dev: false
+
+  /@waweb/base-ui.routing.link/0.1.1_ba56863e2a61708d7a7282472432a374:
+    resolution: {integrity: sha1-5VSVe3QOdtUJwsfdx8MpUFXZ4Q8=, tarball: '@waweb/base-ui.routing.link/-/@waweb-base-ui.routing.link-0.1.1.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.routing.routing-provider': 0.1.1_ba56863e2a61708d7a7282472432a374
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - '@testing-library/react'
+      - url-parse
+    dev: false
+
+  /@waweb/base-ui.routing.native-link/0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c:
+    resolution: {integrity: sha1-ukJa8SzuoSWLrZdnoeTCx/2dpro=, tarball: '@waweb/base-ui.routing.native-link/-/@waweb-base-ui.routing.native-link-0.1.1.tgz'}
+    peerDependencies:
+      '@testing-library/react': ^12.0.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.routing.native-nav-link/0.1.1_ba56863e2a61708d7a7282472432a374:
+    resolution: {integrity: sha1-zkj+zakkB8YNUJbvlYOpvRHuer0=, tarball: '@waweb/base-ui.routing.native-nav-link/-/@waweb-base-ui.routing.native-nav-link-0.1.1.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.routing.compare-url': 0.1.1_0f78d4402c65c297154ea304700b01fa
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.utils.is-browser': 0.1.0
+      classnames: registry.npmjs.org/classnames/2.3.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - '@testing-library/react'
+      - url-parse
+    dev: false
+
+  /@waweb/base-ui.routing.routing-provider/0.1.1_ba56863e2a61708d7a7282472432a374:
+    resolution: {integrity: sha1-BnXXARBkAf3Ym9K+5Vz0SgwDFg4=, tarball: '@waweb/base-ui.routing.routing-provider/-/@waweb-base-ui.routing.routing-provider-0.1.1.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.routing.native-link': 0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c
+      '@waweb/base-ui.routing.native-nav-link': 0.1.1_ba56863e2a61708d7a7282472432a374
+      '@waweb/base-ui.utils.is-browser': 0.1.0
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - '@testing-library/react'
+      - url-parse
+    dev: false
+
+  /@waweb/base-ui.text.heading/0.1.1_28efb623cb9aaa0b90b285bfbaeaff3c:
+    resolution: {integrity: sha1-Fauvpu477tcAXP4bAXprH7l83YI=, tarball: '@waweb/base-ui.text.heading/-/@waweb-base-ui.text.heading-0.1.1.tgz'}
+    peerDependencies:
+      '@testing-library/react': ^12.0.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.text.text-sizes/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-Nl7l+zieryAOwj9uczID3pYKECg=, tarball: '@waweb/base-ui.text.text-sizes/-/@waweb-base-ui.text.text-sizes-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.brand-definition/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-FMbIYfEmd+JI9dZemLCzjSd92PA=, tarball: '@waweb/base-ui.theme.brand-definition/-/@waweb-base-ui.theme.brand-definition-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.color-definition/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-F3PXFRTPtZ6bFm9M/8gdxDAqyWU=, tarball: '@waweb/base-ui.theme.color-definition/-/@waweb-base-ui.theme.color-definition-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.theme.colors': 0.1.0_react-dom@17.0.2+react@17.0.2
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.colors/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-PSuI0hnDJlm2ugqHOuOPRQc4jVg=, tarball: '@waweb/base-ui.theme.colors/-/@waweb-base-ui.theme.colors-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.book/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-hCMeJwikzck4Q+J76hK7WADhWcU=, tarball: '@waweb/base-ui.theme.fonts.book/-/@waweb-base-ui.theme.fonts.book-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.roboto/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-RQwa9jfUQ5xAWos667/AXeVOZKs=, tarball: '@waweb/base-ui.theme.fonts.roboto/-/@waweb-base-ui.theme.fonts.roboto-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.heading-margin-definition/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-c6UZjNthNC+76VY0L4BlPnNCmlI=, tarball: '@waweb/base-ui.theme.heading-margin-definition/-/@waweb-base-ui.theme.heading-margin-definition-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.icons-font/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-bdPOzATog3+NMFe6ndP/NhemMFM=, tarball: '@waweb/base-ui.theme.icons-font/-/@waweb-base-ui.theme.icons-font-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.shadow-definition/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-4bx73CC76O8qzIF8CR+anf6VXpI=, tarball: '@waweb/base-ui.theme.shadow-definition/-/@waweb-base-ui.theme.shadow-definition-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.size-definition/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-ia7taJWh9Zp/VHuaETzPqw3L4vw=, tarball: '@waweb/base-ui.theme.size-definition/-/@waweb-base-ui.theme.size-definition-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.sizes/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-tWrw6L9xUK5EdHpN8Y7ocUwQIKc=, tarball: '@waweb/base-ui.theme.sizes/-/@waweb-base-ui.theme.sizes-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.theme-provider/0.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-J5BAhTzkt825M9xIur4LDwZBoAM=, tarball: '@waweb/base-ui.theme.theme-provider/-/@waweb-base-ui.theme.theme-provider-0.1.0.tgz'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.shadow-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.size-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.utils.is-browser/0.1.0:
+    resolution: {integrity: sha1-/lIdVlThenvWBcSxkMpQqvserg0=, tarball: '@waweb/base-ui.utils.is-browser/-/@waweb-base-ui.utils.is-browser-0.1.0.tgz'}
+    dev: false
 
   registry.npmjs.org/@babel/code-frame/7.16.7:
     resolution: {integrity: sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz}
@@ -634,7 +1335,6 @@ packages:
     version: 7.12.18
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.9
-    dev: false
 
   registry.npmjs.org/@babel/runtime/7.16.7:
     resolution: {integrity: sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/runtime/-/runtime-7.16.7.tgz}
@@ -3574,7 +4274,7 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7
     dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.16.7
       aria-query: registry.npmjs.org/aria-query/4.2.2
       array-includes: registry.npmjs.org/array-includes/3.1.4
       ast-types-flow: registry.npmjs.org/ast-types-flow/0.0.7
@@ -5113,7 +5813,6 @@ packages:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}
     name: regenerator-runtime
     version: 0.13.9
-    dev: false
 
   registry.npmjs.org/regexp.prototype.flags/1.4.1:
     resolution: {integrity: sha512-pMR7hBVUUGI7PMA37m2ofIdQCsomVnas+Jn5UPGAHQ+/LlwKm/aTLJHdasmHRzlfeZwHiAOaRSo2rbBDm3nNUQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.4.1.tgz}
