@@ -15,6 +15,19 @@
         "mainFile": "index.ts",
         "rootDir": "demo/content/hello-world"
     },
+    "design/typography": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "waweb.spectrum",
+        "mainFile": "index.ts",
+        "rootDir": "spectrum/design/typography",
+        "nextVersion": {
+            "version": "patch",
+            "message": "",
+            "username": "Aaron Miller",
+            "email": "amiller@watheia.org"
+        }
+    },
     "mdx-compiler": {
         "scope": "waweb.tools",
         "version": "0.1.1",

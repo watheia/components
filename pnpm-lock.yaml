@@ -43,6 +43,7 @@ importers:
       '@teambit/documenter.markdown.mdx': 0.1.7
       '@teambit/eslint-config-bit-react': ~0.0.367
       '@teambit/harmony': 0.2.11
+      '@teambit/html.modules.render-template': 0.0.95
       '@teambit/mdx.ui.mdx-scope-context': 0.0.368
       '@testing-library/react': ^12.0.0
       '@types/jest': 26.0.20
@@ -134,6 +135,7 @@ importers:
       '@teambit/documenter.markdown.mdx': registry.npmjs.org/@teambit/documenter.markdown.mdx/0.1.7_b3482aaf5744fc7c2aeb7941b0e0a78f
       '@teambit/eslint-config-bit-react': registry.npmjs.org/@teambit/eslint-config-bit-react/0.0.367_42c1a70dd5598d21f152f1cd353fd960
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
+      '@teambit/html.modules.render-template': registry.npmjs.org/@teambit/html.modules.render-template/0.0.95
       '@teambit/mdx.ui.mdx-scope-context': registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context/0.0.368_react-dom@17.0.2+react@17.0.2
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/4.29.3
@@ -693,6 +695,9 @@ importers:
     specifiers: {}
 
   mdx/ui/mdx-scope-context:
+    specifiers: {}
+
+  spectrum/design/typography:
     specifiers: {}
 
   spectrum/theme/spectrum-theme:
@@ -2906,6 +2911,22 @@ packages:
       loud-rejection: registry.npmjs.org/loud-rejection/1.6.0
       reflect-metadata: registry.npmjs.org/reflect-metadata/0.1.13
       user-home: registry.npmjs.org/user-home/2.0.0
+    dev: false
+
+  registry.npmjs.org/@teambit/html.modules.create-element-from-string/0.0.95:
+    resolution: {integrity: sha512-Z2EOL4zXaOsYvD/NQR4WQGldB9WtHPj+ZRAfnp+GyqWo1beh0CGv/N7x6B+WPUkFT0jsQ8pqL63zuau7fAqptQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/html.modules.create-element-from-string/-/html.modules.create-element-from-string-0.0.95.tgz}
+    name: '@teambit/html.modules.create-element-from-string'
+    version: 0.0.95
+    engines: {node: '>=12.22.0'}
+    dev: false
+
+  registry.npmjs.org/@teambit/html.modules.render-template/0.0.95:
+    resolution: {integrity: sha512-RsG9Dkug0p1UnpyOWDVPCOyMNWNStMvyVMKHbVXGmxgJ6LKB5Z0BRoOqiMTwS3qfLIHAbzWcNXcL4bPt+e90bw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/html.modules.render-template/-/html.modules.render-template-0.0.95.tgz}
+    name: '@teambit/html.modules.render-template'
+    version: 0.0.95
+    engines: {node: '>=12.22.0'}
+    dependencies:
+      '@teambit/html.modules.create-element-from-string': registry.npmjs.org/@teambit/html.modules.create-element-from-string/0.0.95
     dev: false
 
   registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context/0.0.368_react-dom@17.0.2+react@17.0.2:

@@ -42,6 +42,7 @@
         "@teambit/design.ui.external-link": "0.0.344",
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@teambit/harmony": "0.2.11",
+        "@teambit/html.modules.render-template": "0.0.95",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "@waweb/base-ui.elements.icon": "0.1.1",
         "@waweb/base-ui.input.error": "0.1.1",
@@ -184,7 +185,7 @@
     "{mdx-document}, {wa-react}": {
       "teambit.harmony/aspect": {}
     },
-    "spectrum/design/typogrophy": {
+    "spectrum/design/typography": {
       // e.g. apply the env to all components under the some/path directory
       "teambit.html/html": {}
     }
