@@ -54,6 +54,7 @@
         "@waweb/base-ui.routing.native-nav-link": "0.1.1",
         "@waweb/base-ui.routing.routing-provider": "0.1.1",
         "@waweb/base-ui.text.heading": "0.1.1",
+        "@waweb/base-ui.text.paragraph": "0.1.1",
         "@waweb/base-ui.text.text-sizes": "0.1.0",
         "@waweb/base-ui.theme.brand-definition": "0.1.0",
         "@waweb/base-ui.theme.color-definition": "0.1.0",
