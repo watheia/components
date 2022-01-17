@@ -21,6 +21,12 @@
         "mainFile": "index.ts",
         "rootDir": "spectrum/design/typography"
     },
+    "elements/icon": {
+        "scope": "waweb.base-ui",
+        "version": "0.1.1",
+        "mainFile": "index.ts",
+        "rootDir": "base-ui/elements/icon"
+    },
     "mdx-compiler": {
         "scope": "waweb.tools",
         "version": "0.1.1",
@@ -51,6 +57,19 @@
         "mainFile": "index.tsx",
         "rootDir": "demo/theme/demo-theme"
     },
+    "theme/fonts/adobe-clean": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "waweb.spectrum",
+        "mainFile": "index.ts",
+        "rootDir": "spectrum/theme/fonts/adobe-clean"
+    },
+    "theme/icons-font": {
+        "scope": "waweb.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "base-ui/theme/icons-font"
+    },
     "theme/spectrum-theme": {
         "scope": "waweb.spectrum",
         "version": "0.0.2",
@@ -68,6 +87,12 @@
         "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "docs/theme/theme-context"
+    },
+    "theme/theme-provider": {
+        "scope": "waweb.base-ui",
+        "version": "0.1.0",
+        "mainFile": "index.tsx",
+        "rootDir": "base-ui/theme/theme-provider"
     },
     "ui/atoms/button": {
         "scope": "waweb.spectrum",

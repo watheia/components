@@ -44,7 +44,6 @@
         "@teambit/harmony": "0.2.11",
         "@teambit/html.modules.render-template": "0.0.95",
         "@typescript-eslint/eslint-plugin": "4.29.3",
-        "@waweb/base-ui.elements.icon": "0.1.1",
         "@waweb/base-ui.input.error": "0.1.1",
         "@waweb/base-ui.layout.breakpoints": "0.1.0",
         "@waweb/base-ui.layout.grid-component": "0.1.0",
@@ -62,11 +61,9 @@
         "@waweb/base-ui.theme.fonts.book": "0.1.0",
         "@waweb/base-ui.theme.fonts.roboto": "0.1.0",
         "@waweb/base-ui.theme.heading-margin-definition": "0.1.0",
-        "@waweb/base-ui.theme.icons-font": "0.1.0",
         "@waweb/base-ui.theme.shadow-definition": "0.1.0",
         "@waweb/base-ui.theme.size-definition": "0.1.0",
         "@waweb/base-ui.theme.sizes": "0.1.0",
-        "@waweb/base-ui.theme.theme-provider": "0.1.0",
         "@waweb/base-ui.utils.is-browser": "0.1.0",
         "clsx": "1.1.1",
         "eslint-import-resolver-node": "0.3.6",
@@ -106,7 +103,9 @@
         "@spectrum-css/typography": "4.0.9",
         "@spectrum-css/well": "3.0.11",
         "@testing-library/react": "^12.0.0",
+        "@types/lodash": "4.14.178",
         "json-formatter-js": "^2.3.4",
+        "lodash": "4.17.21",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "url-parse": "^1.5.4"
@@ -160,19 +159,16 @@
      * configures all components with the appropritate build environment
      *
      */
-    "docs/ui, docs/theme, demo/theme, demo/styles": {
-      "teambit.react/react": {}
-    },
-    "base-ui/elements, base-ui/layout, base-ui/input, base-ui/routing,  base-ui/text, base-ui/theme": {
+    "docs/theme, demo/theme, demo/styles": {
       "teambit.react/react": {}
     },
     /**
      * configures components with namespaces 'entities', 'modules' and 'functions' to use the
      * default NodeJS dev environment.
      */
-    "{ui/atoms/**}, {ui/molecules/**}, {ui/organisms/**}, {ui/views/**}, docs/ui, mdx/ui, spectrum/theme": {
-      "waweb.envs/wa-react": {},
-      "teambit.react/react": "-"
+    "docs/ui, mdx/ui": {
+      "waweb.envs/wa-react": "-",
+      "teambit.react/react": {}
     },
     /**
      * configures components with namespace 'content' to use the MDX dev environment.
@@ -189,6 +185,9 @@
     "spectrum/design/typography": {
       // e.g. apply the env to all components under the some/path directory
       "teambit.html/html": {}
+    },
+    "spectrum/theme": {
+      "teambit.react/react": {}
     }
   }
 }
