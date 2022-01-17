@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { DocsTheme } from './docs-theme';
 import { DocsThemeContext } from './docs-theme-context';
 
-export function MockComponent() {
+function MockComponent() {
   const theme = useContext(DocsThemeContext);
 
   return (

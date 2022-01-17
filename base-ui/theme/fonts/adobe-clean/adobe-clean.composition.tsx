@@ -8,7 +8,6 @@ import {
   AdobeCleanIt,
   AdobeCleanLight,
   AdobeCleanLightIt,
-  AdobeCleanMedium,
   AdobeClean,
   AdobeCleanSemiLight,
   AdobeCleanSemiLightIt,
@@ -86,26 +85,16 @@ export const AdobeCleanSemiLightItComp = () => (
   </AdobeCleanSemiLightIt>
 );
 
-export const AdobeCleanItComp = () => (
-  <AdobeCleanIt>
-    <MockComponent />
-  </AdobeCleanIt>
-);
-export const AdobeCleanExtraBoldItComp = () => (
-  <AdobeCleanExtraBoldIt>
-    <MockComponent />
-  </AdobeCleanExtraBoldIt>
-);
 export const AdobeCleanComp = () => (
   <AdobeClean>
     <MockComponent />
   </AdobeClean>
 );
 
-export const AdobeCleanMediumComp = () => (
-  <AdobeCleanMedium>
+export const AdobeCleanItComp = () => (
+  <AdobeCleanIt>
     <MockComponent />
-  </AdobeCleanMedium>
+  </AdobeCleanIt>
 );
 
 export const AdobeCleanBoldComp = () => (
@@ -124,6 +113,13 @@ export const AdobeCleanExtraBoldComp = () => (
     <MockComponent />
   </AdobeCleanExtraBold>
 );
+
+export const AdobeCleanExtraBoldItComp = () => (
+  <AdobeCleanExtraBoldIt>
+    <MockComponent />
+  </AdobeCleanExtraBoldIt>
+);
+
 export const AdobeCleanBlackComp = () => (
   <AdobeCleanBlack>
     <MockComponent />
@@ -135,73 +131,3 @@ export const AdobeCleanBlackItComp = () => (
     <MockComponent />
   </AdobeCleanBlackIt>
 );
-
-// export const AdobeCleanBoldCondIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanBoldCond = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanBoldSemiCnIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanBoldSemiCn = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanCondIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanCond = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-
-// export const AdobeCleanSemiCnIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>{children}</AdobeClean>
-// );
-// export const AdobeCleanSemiCn = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean kerning="semi-condensed">{children}</AdobeClean>
-// );
-// export const AdobeClean7ptBoldIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>
-//     <link
-//       rel="preload"
-//       href="fonts/subset-AdobeClean-7ptBoldIt.woff2"
-//       as="font"
-//       type="font/woff2"
-//       crossOrigin="anonymous"
-//     />
-//   </AdobeClean>
-// );
-// export const AdobeClean7ptBold = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>
-//     <link
-//       rel="preload"
-//       href="fonts/subset-AdobeClean-7ptBold.woff2"
-//       as="font"
-//       type="font/woff2"
-//       crossOrigin="anonymous"
-//     />
-//   </AdobeClean>
-// );
-// export const AdobeClean7ptIt = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>
-//     <link
-//       rel="preload"
-//       href="fonts/subset-AdobeClean-7ptIt.woff2"
-//       as="font"
-//       type="font/woff2"
-//       crossOrigin="anonymous"
-//     />
-//   </AdobeClean>
-// );
-// export const AdobeClean7ptRegular = ({ children }: AdobeCleanProps) => (
-//   <AdobeClean>
-//     <link
-//       rel="preload"
-//       href="fonts/subset-AdobeClean-7ptRegular.woff2"
-//       as="font"
-//       type="font/woff2"
-//       crossOrigin="anonymous"
-//     />
-//   </AdobeClean>
-// );

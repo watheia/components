@@ -4,7 +4,7 @@ import { camelCase } from 'lodash';
 import styles from './adobe-clean.module.scss';
 
 export const staticFontsPath =
-  'https://github.com/watheia/components/raw/master/spectrum/design/typography/fonts';
+  'https://storage.googleapis.com/watheia.io/assets/fonts';
 
 export type FontKerning = 'normal' | 'semi-condensed' | 'condensed';
 
@@ -12,7 +12,6 @@ export type FontWeight =
   | 'light'
   | 'semi-light'
   | 'normal'
-  | 'medium'
   | 'bold'
   | 'extra-bold'
   | 'black';
@@ -21,31 +20,22 @@ export type FontStyle = 'italic' | 'normal';
 
 export type AdobeCleanClass =
   | 'light'
+  | 'lightIt'
   | 'semiLightIt'
   | 'semiLight'
-  | 'normal'
-  | 'medium'
-  | 'lightIt'
-  | 'extraBoldIt'
+  | 'regular'
   | 'it'
-  | 'extraBold'
-  | 'boldIt'
   | 'bold'
-  | 'black';
-// | 'semiCnIt'
-// | 'semiCn'
-// | 'cond'
-// | 'condIt'
-// | 'boldSemiCn'
-// | 'boldSemiCnIt'
-// | 'boldCond'
-// | 'boldCondIt'
+  | 'boldIt'
+  | 'extraBold'
+  | 'extraBoldIt'
+  | 'black'
+  | 'blackIt';
 
 export const fontWeights: Record<FontWeight, string | number> = {
   light: 300,
   'semi-light': 300,
   normal: 'normal',
-  medium: 500,
   bold: 'bold',
   'extra-bold': 'bold',
   black: 900,
@@ -63,43 +53,9 @@ const fontName = (weight: FontWeight, style: FontStyle): string => {
   else if (weight === 'normal' && style === 'normal') name = 'Regular';
   else if (weight === 'light' && style === 'italic') name = 'LightIt';
   else if (weight === 'light' && style === 'normal') name = 'Light';
-  else if (weight === 'medium' && style === 'normal') name = 'Medium';
-  else if (weight === 'medium' && style === 'italic') name = 'MediumIt';
   else if (weight === 'semi-light' && style === 'italic') name = 'SemiLightIt';
   else if (weight === 'semi-light' && style === 'normal') name = 'SemiLight';
   else throw new Error('Invalid font varient');
-  // else if (kerning === 'condensed' && weight === 'bold' && style === 'italic')
-  //   name = 'BoldCondIt';
-  // else if (kerning === 'condensed' && weight === 'bold' && style === 'normal')
-  //   name = 'BoldCond';
-  // else if (
-  //   kerning === 'semi-condensed' &&
-  //   weight === 'bold' &&
-  //   style === 'italic'
-  // )
-  //   name = 'BoldSemiCnIt';
-  // else if (
-  //   kerning === 'semi-condensed' &&
-  //   weight === 'bold' &&
-  //   style === 'normal'
-  // )
-  //   name = 'BoldSemiCn';
-  // else if (kerning === 'condensed' && weight === 'normal' && style === 'italic')
-  //   name = 'CondIt';
-  // else if (kerning === 'condensed' && weight === 'normal' && style === 'normal')
-  //   name = 'Cond';
-  // else if (
-  //   kerning === 'semi-condensed' &&
-  //   weight === 'normal' &&
-  //   style === 'italic'
-  // )
-  //   name = 'SemiCnIt';
-  // else if (
-  //   kerning === 'semi-condensed' &&
-  //   weight === 'normal' &&
-  //   style === 'normal'
-  // )
-  //   name = 'SemiCn';
 
   return name;
 };
@@ -139,7 +95,6 @@ export const AdobeClean = ({
         href={`${staticFontsPath}/subset-AdobeClean-${font}.woff2`}
         as="font"
         type="font/woff2"
-        crossOrigin="anonymous"
       />
       {children}
     </div>
@@ -166,16 +121,6 @@ export const AdobeCleanSemiLight = ({ children }: AdobeCleanProps) => (
 
 export const AdobeCleanSemiLightIt = ({ children }: AdobeCleanProps) => (
   <AdobeClean weight="semi-light" fontStyle="italic">
-    {children}
-  </AdobeClean>
-);
-
-export const AdobeCleanMedium = ({ children }: AdobeCleanProps) => (
-  <AdobeClean weight="medium">{children}</AdobeClean>
-);
-
-export const AdobeCleanMediumIt = ({ children }: AdobeCleanProps) => (
-  <AdobeClean weight="medium" fontStyle="italic">
     {children}
   </AdobeClean>
 );
