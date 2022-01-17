@@ -1,0 +1,49 @@
+---
+description: 'Material icon font wrapper'
+labels: ['material-ui', 'react', 'icons']
+---
+
+import { Icon } from './icon';
+import { IconFont } from '@waweb/base-ui.theme.icons-font';
+import Box from '@mui/material/Box';
+import { teal } from '@mui/material/colors';
+
+## Basic usage
+
+The Icon component will display an icon from any icon font that supports
+ligatures. As a prerequisite, you must include one, such as the Material
+icon font in your project. To use an icon simply wrap the icon name
+(font ligature) with the Icon component, for example:
+
+```jsx live
+<IconFont>
+  <Icon>star</Icon>;
+</IconFont>
+```
+
+## Style Options
+
+By default, an Icon will inherit the current text color. Optionally,
+you can set the icon color using one of the theme color properties:
+
+- `primary`
+- `secondary`
+- `action`
+- `error`
+- `disabled`
+
+```jsx live
+<Box
+  sx={{
+    '& > :not(style)': {
+      m: 2,
+    },
+  }}
+>
+  <Icon>add_circle</Icon>
+  <Icon color="primary">add_circle</Icon>
+  <Icon sx={{ color: teal[500] }}>add_circle</Icon>
+  <Icon fontSize="small">add_circle</Icon>
+  <Icon sx={{ fontSize: 30 }}>add_circle</Icon>
+</Box>
+```

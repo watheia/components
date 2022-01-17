@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeCompositions } from '@waweb/docs.theme.theme-compositions';
+import { DocsTheme } from '@waweb/docs.theme.docs-theme';
 import { MDXLayout } from './mdx-layout';
 // @ts-ignore
 import MdxContentDefault from './mdx-layout.docs.md';
@@ -7,19 +7,19 @@ import MdxContentDefault from './mdx-layout.docs.md';
 import MdxContentExample from './md-example.md';
 
 export const MDXLayoutExample = () => (
-  <ThemeCompositions>
+  <DocsTheme>
     <MDXLayout>
       <MdxContentDefault />
     </MDXLayout>
-  </ThemeCompositions>
+  </DocsTheme>
 );
 
 export const MDXLayoutSecondExample = () => (
-  <ThemeCompositions>
+  <DocsTheme>
     <MDXLayout>
       <MdxContentExample />
     </MDXLayout>
-  </ThemeCompositions>
+  </DocsTheme>
 );
 
 MDXLayoutSecondExample.canvas = {

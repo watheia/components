@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeCompositions } from '@waweb/docs.theme.theme-compositions';
+import { DocsTheme } from '@waweb/docs.theme.docs-theme';
 import { Snippet } from './snippet';
 
 const code = `
@@ -8,16 +8,16 @@ const code = `
 
 export const SnippetExample = () => {
   return (
-    <ThemeCompositions>
+    <DocsTheme>
       <Snippet>{code}</Snippet>
-    </ThemeCompositions>
+    </DocsTheme>
   );
 };
 
 export const SnippetLiveExample = () => {
   return (
-    <ThemeCompositions>
+    <DocsTheme>
       <Snippet live>{code}</Snippet>
-    </ThemeCompositions>
+    </DocsTheme>
   );
 };

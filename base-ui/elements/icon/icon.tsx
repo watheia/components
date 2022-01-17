@@ -1,26 +1,27 @@
 import React from 'react';
-import classnames from 'clsx';
+import MuiIcon, { IconProps as MuiIconProps } from '@mui/material/Icon';
 
 export type IconProps = {
   /**
-   * icon id (class name)
+   * @deprecated use component children instead
    */
-  of: string;
-} & React.HTMLAttributes<HTMLSpanElement>;
+  of?: string;
+} & MuiIconProps;
 
 /**
  * Base template component for icons.
- * Compose this class to make a specific icon component for a font-set, like [bit-icon](https://bit.dev/bit/evangelist/atom/bit-icon).
- * @example
- * const iconset = "eva-icons";
- * const EvaButton = (props) => <Icon {...props} of={`${iconset}-${props.of}`} />;
+ * Compose this class to make a specific icon component.
+ * See: <https://mui.com/components/material-icons/>
  */
-export function Icon({ of: iconName, className, ...rest }: IconProps) {
+export function Icon({ className, of, children, ...rest }: IconProps) {
+  children = of ?? children;
   return (
-    <span
+    <MuiIcon
       data-bit-id="waweb.base-ui/elements/icon"
-      className={classnames(iconName, className)}
+      className={className}
       {...rest}
-    />
+    >
+      {children}
+    </MuiIcon>
   );
 }

@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -116,9 +116,7 @@
    * Add an aditional bundler for pure html
    */
   "teambit.compilation/bundler": {
-    "dedicatedEnvDevServers": [
-      "teambit.html/html"
-    ]
+    "dedicatedEnvDevServers": ["teambit.html/html"]
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your
@@ -159,16 +157,16 @@
      * configures all components with the appropritate build environment
      *
      */
-    "docs/theme, demo/theme, demo/styles": {
+    "base-ui/theme": {
       "teambit.react/react": {}
     },
     /**
      * configures components with namespaces 'entities', 'modules' and 'functions' to use the
      * default NodeJS dev environment.
      */
-    "docs/ui, mdx/ui": {
-      "waweb.envs/wa-react": "-",
-      "teambit.react/react": {}
+    "{elements/**}, {ui/**}": {
+      "waweb.envs/wa-react": {},
+      "teambit.react/react": "-"
     },
     /**
      * configures components with namespace 'content' to use the MDX dev environment.
@@ -179,15 +177,15 @@
     /**
      * configures components with namespaces 'envs' and 'aspects' to use the default Aspect development environment.
      */
-    "{mdx-document}, {wa-react}": {
+    "{wa-react}": {
       "teambit.harmony/aspect": {}
     },
     "spectrum/design/typography": {
       // e.g. apply the env to all components under the some/path directory
       "teambit.html/html": {}
-    },
-    "spectrum/theme": {
-      "teambit.react/react": {}
     }
+    // "spectrum/theme": {
+    //   "teambit.react/react": {}
+    // }
   }
 }

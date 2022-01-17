@@ -1,6 +1,6 @@
 import React from 'react';
 import JSONFormatter from 'json-formatter-js';
-import { ThemeCompositions } from '@waweb/docs.theme.theme-compositions';
+import { DocsTheme } from '@waweb/docs.theme.docs-theme';
 import { compileSync } from './mdx-compiler';
 
 const mdxInput = `
@@ -25,7 +25,7 @@ export const CompileSyncExample = () => {
   });
   const dataContent = new JSONFormatter(result, 2);
   return (
-    <ThemeCompositions>
+    <DocsTheme>
       <div>
         <div
           ref={(nodeElement) => {
@@ -33,6 +33,6 @@ export const CompileSyncExample = () => {
           }}
         />
       </div>
-    </ThemeCompositions>
+    </DocsTheme>
   );
 };

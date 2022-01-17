@@ -1,0 +1,18 @@
+---
+labels: ['react', 'typescript', 'theme', 'compositions']
+description: 'concrete documentation theme composition'
+---
+
+import { DocsTheme } from './docs-theme';
+import styles from './layout.module.scss';
+
+### Overview
+
+This component is built on `@waweb/base-ui.theme.theme-provider` and used for compositions inside @waweb projects.  
+Using theme compositions to center element for example:
+
+```js live
+<DocsTheme className={styles.center}>
+  <div>This is a center element</div>
+</DocsTheme>
+```

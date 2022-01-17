@@ -31,7 +31,7 @@ export function CopyBox({ children, className, ...rest }: CopyBoxProps) {
       <div className={styles.rightSection}>
         <CopiedMessage show={isCopied} />
         <button className={styles.button} onClick={handleClick}>
-          <Icon className={styles.copyIcon} of="copy-cmp" />
+          <Icon className={styles.copyIcon}>content_copy</Icon>
         </button>
       </div>
     </Grid>

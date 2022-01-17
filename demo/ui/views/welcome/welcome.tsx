@@ -64,7 +64,7 @@ export function Welcome() {
           link="https://harmony-docs.bit.dev/building-with-bit/consuming-components#import-components"
           heading="Import"
           text="import components into your workspace"
-          command="bit import @waweb/docs.theme.theme-compositions"
+          command="bit import @waweb/base-ui.theme.theme-provider"
         />
         <Card
           link="https://harmony-docs.bit.dev/building-with-bit/versioning-components"

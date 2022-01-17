@@ -1,11 +1,11 @@
 import React from 'react';
-import { ThemeCompositions } from '@waweb/docs.theme.theme-compositions';
+import { DocsTheme } from '@waweb/docs.theme.docs-theme';
 import { Link } from './link';
 
 export const LinkExample = () => (
-  <ThemeCompositions>
-    <Link data-testid="test-link" href="https://bit.dev">
-      bit.dev
+  <DocsTheme>
+    <Link data-testid="test-link" href="https://watheia.io">
+      watheia.io
     </Link>
-  </ThemeCompositions>
+  </DocsTheme>
 );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EMBED_LINK = 'https://d1azc1qln24ryf.cloudfront.net/158286/Bit/style-cf.css';
+const EMBED_LINK = 'https://fonts.googleapis.com/icon';
 
 export type IconFontProps = {
   /** query id for cache busting (copy this from Icomoon's _production_ link) */
@@ -19,6 +19,6 @@ export type IconFontProps = {
  * </html>
  */
 export function IconFont(props: IconFontProps) {
-  const { query = 'cr084i' } = props;
+  const { query = 'family=Material+Icons' } = props;
   return <link rel="stylesheet" href={`${EMBED_LINK}?${query}`} />;
 }

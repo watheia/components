@@ -9,7 +9,8 @@ import { shadowTheme } from '@waweb/base-ui.theme.shadow-definition';
 import { primaryPalette } from '@waweb/base-ui.theme.color-definition';
 import { brands } from '@waweb/base-ui.theme.brand-definition';
 import { headingMargins } from '@waweb/base-ui.theme.heading-margin-definition';
-import { bookFont } from '@waweb/base-ui.theme.fonts.book';
+import { AdobeClean } from '@waweb/base-ui.theme.fonts.adobe-clean';
+import { IconFont } from '@waweb/base-ui.theme.icons-font';
 import texts from './texts.module.scss';
 
 /**
@@ -23,21 +24,27 @@ import texts from './texts.module.scss';
  * </Theme>
  */
 
-export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
+export function Theme({
+  className,
+  children,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       {...props}
       className={classNames(
         headingFontSize,
         textFontSize,
-        bookFont,
         shadowTheme,
         primaryPalette,
         brands,
         headingMargins,
         texts.defaults,
-        props.className
+        className
       )}
-    ></div>
+    >
+      <IconFont />
+      <AdobeClean>{children}</AdobeClean>
+    </div>
   );
 }
