@@ -13,6 +13,13 @@ export type MDXScopeProviderProps = {
   children: ReactNode;
 };
 
-export function MDXScopeProvider({ components, children }: MDXScopeProviderProps) {
-  return <MDXScopeContext.Provider value={components}>{children}</MDXScopeContext.Provider>;
+export function MDXScopeProvider({
+  components,
+  children,
+}: MDXScopeProviderProps) {
+  return (
+    <MDXScopeContext.Provider value={components}>
+      {children}
+    </MDXScopeContext.Provider>
+  );
 }

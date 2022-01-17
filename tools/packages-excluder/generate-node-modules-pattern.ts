@@ -10,7 +10,9 @@ type generateNodeModulesPatternOptions = {
  * @param {string[]} packages - array of packages.
  * @returns {string} node modules catched packages regex.
  */
-export function generateNodeModulesPattern({ packages }: generateNodeModulesPatternOptions): string {
+export function generateNodeModulesPattern({
+  packages,
+}: generateNodeModulesPatternOptions): string {
   const negativeLookahead = packages.reduce((acc, curr) => {
     const yarnPattern = curr;
     const pnpmPattern = `.pnpm/.*[+/]${curr}.*`;

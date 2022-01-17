@@ -1,0 +1,78 @@
+---
+description: 'Adobe Clean Fonts'
+labels: ['spectrum', 'typography', 'webfonts']
+---
+
+import {
+  AdobeCleanBlack,
+  AdobeCleanBoldIt,
+  AdobeCleanExtraBold,
+  AdobeCleanExtraBoldIt,
+  AdobeCleanIt,
+  AdobeCleanLight,
+  AdobeCleanLightIt,
+  AdobeCleanMedium,
+  AdobeCleanRegular,
+  AdobeCleanSemiLight,
+  AdobeCleanSemiLightIt,
+  light,
+  lightIt,
+  semiLightIt,
+  semiLight,
+  normal,
+  medium,
+  it,
+  bold,
+  boldIt,
+  extraBold,
+  black,
+  blackIt,
+} from './adobe-clean';
+import { MockComponent } from './adobe-clean.composition';
+
+Provides individual font faces for the `Adobe Clean` font family.
+
+### Component usage
+
+Font faces are loaded on demand. Each font class needs to be added somewhere
+in the entry point in order to use a specific variant. Use the `Adobe Clean`
+font family, or any of the exported class names to style text blocks
+
+```jsx live
+<div>
+  <AdobeCleanBlack />
+  <AdobeCleanBoldIt />
+  <AdobeCleanExtraBold />
+  <AdobeCleanExtraBoldIt />
+  <AdobeCleanIt />
+  <AdobeCleanLight />
+  <AdobeCleanLightIt />
+  <AdobeClean />
+  <AdobeCleanMedium />
+  <AdobeCleanMediumIt />
+  <AdobeCleanSemiLight />
+  <AdobeCleanSemiLightIt />
+  <div style={{ fontFamily: 'Adobe Clean' }}>
+    <p>
+      <strong>abcdefghijklmnopqrstuvwxyz</strong>
+      <br />
+      <em>ABCDEFGHIJKLMNOPQRSTUVWXYZ</em>
+      <br />
+      <span style={{ fontWeight: 300 }}>
+        0123456789.:,;()*!?'@#&lt;&gt;$%&amp;^+-=~
+      </span>
+    </p>
+    <p className={light}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={lightIt}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={semiLight}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={semiLightIt}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={normal}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={medium}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={it}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={boldIt}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={extraBold}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={black}>The quick brown fox jumps over the lazy dog.</p>
+    <p className={blackIt}>The quick brown fox jumps over the lazy dog.</p>
+  </div>
+</div>
+```

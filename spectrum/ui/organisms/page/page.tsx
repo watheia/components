@@ -8,9 +8,5 @@ export type PageProps = {
 };
 
 export function Page({ children }: PageProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }

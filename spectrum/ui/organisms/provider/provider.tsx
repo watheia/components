@@ -8,9 +8,5 @@ export type ProviderProps = {
 };
 
 export function Provider({ children }: ProviderProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }

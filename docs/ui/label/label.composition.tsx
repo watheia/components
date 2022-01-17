@@ -6,5 +6,9 @@ export const LightLabel = () => {
 };
 
 export const DarkLabel = () => {
-  return <Label style={{ backgroundColor: '#414141', color: 'white' }}>dark label</Label>;
+  return (
+    <Label style={{ backgroundColor: '#414141', color: 'white' }}>
+      dark label
+    </Label>
+  );
 };

@@ -3,7 +3,9 @@ import { generateNodeModulesPattern } from './generate-node-modules-pattern';
 describe('generateNodeModulesPattern()', () => {
   describe('should work with empty array', () => {
     it('include any package in the node_modules', () => {
-      expect(generateNodeModulesPattern({ packages: [] })).toEqual('node_modules/(?!()/)');
+      expect(generateNodeModulesPattern({ packages: [] })).toEqual(
+        'node_modules/(?!()/)'
+      );
     });
   });
   describe('should work with one package', () => {
@@ -19,10 +21,14 @@ describe('generateNodeModulesPattern()', () => {
         expect(regex.test('node_modules/@myorg/something')).toBeFalsy();
       });
       it('should have old pnpm structure excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org/@myorg/something')).toBeFalsy();
-      });      
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org/@myorg/something')
+        ).toBeFalsy();
+      });
       it('should have new pnpm structure with + excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org+@myorg/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org+@myorg/something')
+        ).toBeFalsy();
       });
       it('should have new pnpm structure excluded', () => {
         expect(regex.test('node_modules/.pnpm/@myorg/something')).toBeFalsy();
@@ -44,10 +50,14 @@ describe('generateNodeModulesPattern()', () => {
         expect(regex.test('node_modules/react/something')).toBeFalsy();
       });
       it('should have old pnpm structure excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org/react/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org/react/something')
+        ).toBeFalsy();
       });
       it('should have new pnpm structure with + excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org+react/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org+react/something')
+        ).toBeFalsy();
       });
       it('should have new pnpm structure excluded', () => {
         expect(regex.test('node_modules/.pnpm/react/something')).toBeFalsy();
@@ -58,10 +68,14 @@ describe('generateNodeModulesPattern()', () => {
         expect(regex.test('node_modules/@myorg/something')).toBeFalsy();
       });
       it('should have old pnpm structure excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org/@myorg/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org/@myorg/something')
+        ).toBeFalsy();
       });
       it('should have new pnpm structure with + excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org+@myorg/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/registry.npmjs.org+@myorg/something')
+        ).toBeFalsy();
       });
       it('should have new pnpm structure excluded', () => {
         expect(regex.test('node_modules/.pnpm/@myorg/something')).toBeFalsy();
@@ -69,16 +83,28 @@ describe('generateNodeModulesPattern()', () => {
     });
     describe('should exclude the third package', () => {
       it('should have yarn structure excluded', () => {
-        expect(regex.test('node_modules/testing-library__dom/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/testing-library__dom/something')
+        ).toBeFalsy();
       });
       it('should have old pnpm structure excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org/testing-library__dom/something')).toBeFalsy();
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.npmjs.org/testing-library__dom/something'
+          )
+        ).toBeFalsy();
       });
       it('should have new pnpm structure with + excluded', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org+testing-library__dom/something')).toBeFalsy();
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.npmjs.org+testing-library__dom/something'
+          )
+        ).toBeFalsy();
       });
       it('should have new pnpm structure excluded', () => {
-        expect(regex.test('node_modules/.pnpm/testing-library__dom/something')).toBeFalsy();
+        expect(
+          regex.test('node_modules/.pnpm/testing-library__dom/something')
+        ).toBeFalsy();
       });
     });
   });
@@ -94,22 +120,42 @@ describe('generateNodeModulesPattern()', () => {
 
     describe('should not exclude', () => {
       it('with yarn structure', () => {
-        expect(regex.test('node_modules/not-excluded-package/some-path')).toBeTruthy();
+        expect(
+          regex.test('node_modules/not-excluded-package/some-path')
+        ).toBeTruthy();
       });
       it('with old pnpm structure', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org/not-excluded-package/some-path')).toBeTruthy();
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.npmjs.org/not-excluded-package/some-path'
+          )
+        ).toBeTruthy();
       });
-      it('with new pnpm structure with \'+\'', () => {
-        expect(regex.test('node_modules/.pnpm/registry.npmjs.org+not-excluded-package/some-path')).toBeTruthy();
+      it("with new pnpm structure with '+'", () => {
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.npmjs.org+not-excluded-package/some-path'
+          )
+        ).toBeTruthy();
       });
       it('with old pnpm structure, different registry name', () => {
-        expect(regex.test('node_modules/.pnpm/registry.artifactory.something/not-excluded-package/some-path')).toBeTruthy();
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.artifactory.something/not-excluded-package/some-path'
+          )
+        ).toBeTruthy();
       });
-      it('with new pnpm structure with \'+\'', () => {
-        expect(regex.test('node_modules/.pnpm/registry.artifactory.something+not-excluded-package/some-path')).toBeTruthy();
+      it("with new pnpm structure with '+'", () => {
+        expect(
+          regex.test(
+            'node_modules/.pnpm/registry.artifactory.something+not-excluded-package/some-path'
+          )
+        ).toBeTruthy();
       });
       it('with new pnpm structure', () => {
-        expect(regex.test('node_modules/.pnpm/not-excluded-package/some-path')).toBeTruthy();
+        expect(
+          regex.test('node_modules/.pnpm/not-excluded-package/some-path')
+        ).toBeTruthy();
       });
     });
   });

@@ -1,5 +1,14 @@
 ---
-labels: ['typescript', 'utils', 'packages', 'node modules', 'node', 'regex', 'excluder']
+labels:
+  [
+    'typescript',
+    'utils',
+    'packages',
+    'node modules',
+    'node',
+    'regex',
+    'excluder',
+  ]
 description: 'Create node modules regex with packages.'
 ---
 

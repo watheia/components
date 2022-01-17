@@ -8,9 +8,5 @@ export type SpectrumThemeProps = {
 };
 
 export function SpectrumTheme({ children }: SpectrumThemeProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }

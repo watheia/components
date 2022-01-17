@@ -7,7 +7,10 @@ import { CompileOutput } from './compile-output';
 describe('MDXCompiler', () => {
   describe('compile()', () => {
     describe('simple file (mocks/simple.mdx)', () => {
-      const simpleFile = readFileSync(join(__dirname, 'mocks', 'simple.mdx'), 'utf-8');
+      const simpleFile = readFileSync(
+        join(__dirname, 'mocks', 'simple.mdx'),
+        'utf-8'
+      );
 
       let output: CompileOutput;
       beforeEach(async () => {
@@ -22,7 +25,9 @@ describe('MDXCompiler', () => {
       });
 
       it('should compile the markdown into a react component and export as default', async () => {
-        expect(output.contents).to.include('export default function MDXContent');
+        expect(output.contents).to.include(
+          'export default function MDXContent'
+        );
       });
 
       it('should not include the metadata in the compiled code', async () => {
@@ -36,7 +41,10 @@ describe('MDXCompiler', () => {
     });
 
     describe('empty headers', () => {
-      const emptyHeadersFile = readFileSync(join(__dirname, 'mocks', 'no-headers.mdx'), 'utf-8');
+      const emptyHeadersFile = readFileSync(
+        join(__dirname, 'mocks', 'no-headers.mdx'),
+        'utf-8'
+      );
 
       let output: CompileOutput;
       beforeEach(async () => {
@@ -48,7 +56,9 @@ describe('MDXCompiler', () => {
       });
 
       it('should compile the markdown into a react component and export as default', async () => {
-        expect(output.contents).to.include('export default function MDXContent');
+        expect(output.contents).to.include(
+          'export default function MDXContent'
+        );
       });
 
       it('should include the mdx content in the component', () => {

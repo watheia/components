@@ -11,7 +11,7 @@ export function Typography(props: TypographyProps) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, noarchive">
     <meta name="format-detection" content="telephone=no">
-    <title>Transfonter demo</title>
+    <title>Spectrum Typography Demo</title>
     <link href="stylesheet.css" rel="stylesheet">
     <style>
         /*
@@ -173,7 +173,7 @@ export function Typography(props: TypographyProps) {
         <div class="font-container" style="font-family: 'Adobe Clean'; font-weight: 900; font-style: italic;">
             <p class="letters">
                 abcdefghijklmnopqrstuvwxyz<br>
-ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
                 0123456789.:,;()*!?'@#&lt;&gt;$%&^+-=~
             </p>
             <p class="s10" style="font-size: 10px;">The quick brown fox jumps over the lazy dog.</p>
