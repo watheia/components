@@ -41,6 +41,7 @@ export const fontWeights: Record<FontWeight, string | number> = {
   black: 900,
 };
 
+// TODO this can be done more programaticly
 const fontName = (weight: FontWeight, style: FontStyle): string => {
   let name = '';
   if (weight === 'black' && style === 'italic') name = 'BlackIt';
