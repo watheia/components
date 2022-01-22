@@ -24,9 +24,14 @@ importers:
       '@spectrum-css/fieldlabel': ^4.0.9
       '@spectrum-css/link': ^3.1.12
       '@spectrum-css/page': ^5.0.0
-      '@spectrum-css/typography': ^4.0.9
-      '@spectrum-css/vars': ^6.0.0
-      '@spectrum-css/well': ^3.0.11
+      '@spectrum-css/pagination': 5.0.0
+      '@spectrum-css/popover': 5.0.0
+      '@spectrum-css/progressbar': 1.0.13
+      '@spectrum-css/progresscircle': 1.0.11
+      '@spectrum-css/radio': 3.0.12
+      '@spectrum-css/textfield': 3.1.3
+      '@spectrum-css/typography': 4.0.9
+      '@spectrum-css/well': 3.0.11
       '@teambit/design.ui.external-link': 0.0.344
       '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.3
       '@teambit/documenter.markdown.mdx': 0.1.8
@@ -56,6 +61,7 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0
       '@waweb/base-ui.theme.color-definition': 0.1.0
       '@waweb/base-ui.theme.colors': 0.1.0
+      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1
       '@waweb/base-ui.theme.fonts.book': 0.1.0
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0
@@ -107,9 +113,14 @@ importers:
       '@spectrum-css/fieldlabel': registry.npmjs.org/@spectrum-css/fieldlabel/4.0.9_@spectrum-css+vars@6.0.0
       '@spectrum-css/link': registry.npmjs.org/@spectrum-css/link/3.1.12_@spectrum-css+vars@6.0.0
       '@spectrum-css/page': registry.npmjs.org/@spectrum-css/page/5.0.0
-      '@spectrum-css/typography': registry.npmjs.org/@spectrum-css/typography/4.0.9_@spectrum-css+vars@6.0.0
-      '@spectrum-css/vars': registry.npmjs.org/@spectrum-css/vars/6.0.0
-      '@spectrum-css/well': registry.npmjs.org/@spectrum-css/well/3.0.11_@spectrum-css+vars@6.0.0
+      '@spectrum-css/pagination': registry.npmjs.org/@spectrum-css/pagination/5.0.0_757bc25453549bb615eccd6aad1b97a4
+      '@spectrum-css/popover': registry.npmjs.org/@spectrum-css/popover/5.0.0_@spectrum-css+dialog@5.0.0
+      '@spectrum-css/progressbar': registry.npmjs.org/@spectrum-css/progressbar/1.0.13_@spectrum-css+fieldlabel@4.0.9
+      '@spectrum-css/progresscircle': registry.npmjs.org/@spectrum-css/progresscircle/1.0.11
+      '@spectrum-css/radio': registry.npmjs.org/@spectrum-css/radio/3.0.12
+      '@spectrum-css/textfield': registry.npmjs.org/@spectrum-css/textfield/3.1.3
+      '@spectrum-css/typography': registry.npmjs.org/@spectrum-css/typography/4.0.9
+      '@spectrum-css/well': registry.npmjs.org/@spectrum-css/well/3.0.11
       '@teambit/design.ui.external-link': registry.npmjs.org/@teambit/design.ui.external-link/0.0.344_react-dom@17.0.2+react@17.0.2
       '@teambit/documenter.markdown.hybrid-live-code-snippet': registry.npmjs.org/@teambit/documenter.markdown.hybrid-live-code-snippet/0.1.3_b3482aaf5744fc7c2aeb7941b0e0a78f
       '@teambit/documenter.markdown.mdx': registry.npmjs.org/@teambit/documenter.markdown.mdx/0.1.8_b3482aaf5744fc7c2aeb7941b0e0a78f
@@ -133,6 +144,7 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.colors': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1_be6d867c376983ba4bd09d7bec4453cd
       '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
@@ -482,6 +494,65 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0
     dependencies:
       core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.adobe-clean-serif/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
+    resolution: {integrity: sha1-PVyv4XuhlHc5Tm3Bvx1wASHtRAc=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean-serif/-/@waweb-base-ui.theme.fonts.adobe-clean-serif-0.1.1.tgz'}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@testing-library/react': ^12.0.0
+      '@types/lodash': 4.14.178
+      lodash: 4.17.21
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
+      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
+      '@waweb/base-ui.theme.fonts.adobe-clean': 0.2.1_be6d867c376983ba4bd09d7bec4453cd
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      lodash: registry.npmjs.org/lodash/4.17.21
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.adobe-clean/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
+    resolution: {integrity: sha1-jcOprJrbvISo3/liBo8Gd7tWGSo=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.1.1.tgz'}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@testing-library/react': ^12.0.0
+      '@types/lodash': 4.14.178
+      lodash: 4.17.21
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
+      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
+      core-js: registry.npmjs.org/core-js/3.20.3
+      lodash: registry.npmjs.org/lodash/4.17.21
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.adobe-clean/0.2.1_be6d867c376983ba4bd09d7bec4453cd:
+    resolution: {integrity: sha1-8Lx6sRsa/jTUrdn3RUUe89IhaSw=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.2.1.tgz'}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@testing-library/react': ^12.0.0
+      '@types/lodash': 4.14.178
+      lodash: 4.17.21
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
+      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
+      core-js: registry.npmjs.org/core-js/3.20.3
+      lodash: registry.npmjs.org/lodash/4.17.21
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
@@ -1723,9 +1794,21 @@ packages:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
 
+    id: registry.npmjs.org/@teambit/design.theme.icons-font/1.0.2
+    name: '@teambit/design.theme.icons-font'
+    version: 1.0.2
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      core-js: registry.npmjs.org/core-js/3.20.3
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
   registry.npmjs.org/@teambit/design.ui.external-link/0.0.344_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-LISsva3Y1ZGT8RIjyBj/pTANRrFwFA5OmP1uGtZ1qxfXY9ZaOs7/s5JKeB/KRLIwu4UH91C/0+4RLyHB8BK6cw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/design.ui.external-link/-/design.ui.external-link-0.0.344.tgz}
-    id: registry.npmjs.org/@teambit/design.ui.external-link/0.0.344
     name: '@teambit/design.ui.external-link'
     version: 0.0.344
     engines: {node: '>=12.15.0'}

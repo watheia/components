@@ -1,13 +1,13 @@
 import { MainRuntime } from '@teambit/cli';
-import { ReactAspect, ReactMain } from '@teambit/react';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
+import { ReactAspect, ReactMain } from '@teambit/react';
 import { WaReactAspect } from './wa-react.aspect';
 // import { previewConfigTransformer, devServerConfigTransformer } from './webpack/webpack-transformers';
 
 /**
  * Uncomment to include config files for overrides of Typescript or Webpack
  */
-// const tsconfig = require('./typescript/tsconfig');
+const tsconfig = require('./typescript/tsconfig');
 
 export class WaReactMain {
   static slots = [];
@@ -23,12 +23,12 @@ export class WaReactMain {
        * Your config gets merged with the defaults
        */
 
-      // react.overrideTsConfig(tsconfig),
+      react.overrideTsConfig(tsconfig),
       // react.useWebpack({
       //   previewConfig: [previewConfigTransformer],
       //   devServerConfig: [devServerConfigTransformer],
       // }),
-      // react.overrideJestConfig(require.resolve('./jest/jest.config')),
+      react.overrideJestConfig(require.resolve('./jest/jest.config')),
 
       /**
        * override the ESLint default config here then check your files for lint errors
