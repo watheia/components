@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RoutingLink, LinkProps } from '@teambit/base-ui.routing.link';
+import { Link as RoutingLink, LinkProps } from '@waweb/base-ui.routing.link';
 
 import styles from './link.module.scss';
 

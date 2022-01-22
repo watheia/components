@@ -36,8 +36,6 @@ importers:
       '@spectrum-css/textfield': 3.1.3
       '@spectrum-css/typography': 4.0.9
       '@spectrum-css/well': 3.0.11
-      '@teambit/base-ui.routing.link': 1.0.0
-      '@teambit/design.theme.icons-font': 1.0.2
       '@teambit/design.ui.external-link': 0.0.344
       '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.3
       '@teambit/documenter.markdown.mdx': 0.1.7
@@ -67,6 +65,7 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0
       '@waweb/base-ui.theme.color-definition': 0.1.0
       '@waweb/base-ui.theme.colors': 0.1.0
+      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1
       '@waweb/base-ui.theme.fonts.book': 0.1.0
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0
@@ -131,8 +130,6 @@ importers:
       '@spectrum-css/textfield': registry.npmjs.org/@spectrum-css/textfield/3.1.3
       '@spectrum-css/typography': registry.npmjs.org/@spectrum-css/typography/4.0.9
       '@spectrum-css/well': registry.npmjs.org/@spectrum-css/well/3.0.11
-      '@teambit/base-ui.routing.link': registry.npmjs.org/@teambit/base-ui.routing.link/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/design.theme.icons-font': registry.npmjs.org/@teambit/design.theme.icons-font/1.0.2_react-dom@17.0.2+react@17.0.2
       '@teambit/design.ui.external-link': registry.npmjs.org/@teambit/design.ui.external-link/0.0.344_react-dom@17.0.2+react@17.0.2
       '@teambit/documenter.markdown.hybrid-live-code-snippet': registry.npmjs.org/@teambit/documenter.markdown.hybrid-live-code-snippet/0.1.3_b3482aaf5744fc7c2aeb7941b0e0a78f
       '@teambit/documenter.markdown.mdx': registry.npmjs.org/@teambit/documenter.markdown.mdx/0.1.7_b3482aaf5744fc7c2aeb7941b0e0a78f
@@ -156,6 +153,7 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.colors': 0.1.0_react-dom@17.0.2+react@17.0.2
+      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1_be6d867c376983ba4bd09d7bec4453cd
       '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
@@ -505,8 +503,48 @@ packages:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
 
+  /@waweb/base-ui.theme.fonts.adobe-clean-serif/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
+    resolution: {integrity: sha1-PVyv4XuhlHc5Tm3Bvx1wASHtRAc=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean-serif/-/@waweb-base-ui.theme.fonts.adobe-clean-serif-0.1.1.tgz'}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@testing-library/react': ^12.0.0
+      '@types/lodash': 4.14.178
+      lodash: 4.17.21
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
+      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
+      '@waweb/base-ui.theme.fonts.adobe-clean': 0.2.1_be6d867c376983ba4bd09d7bec4453cd
+      clsx: registry.npmjs.org/clsx/1.1.1
+      core-js: registry.npmjs.org/core-js/3.20.3
+      lodash: registry.npmjs.org/lodash/4.17.21
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
   /@waweb/base-ui.theme.fonts.adobe-clean/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
     resolution: {integrity: sha1-jcOprJrbvISo3/liBo8Gd7tWGSo=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.1.1.tgz'}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@testing-library/react': ^12.0.0
+      '@types/lodash': 4.14.178
+      lodash: 4.17.21
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
+      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
+      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
+      core-js: registry.npmjs.org/core-js/3.20.3
+      lodash: registry.npmjs.org/lodash/4.17.21
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  /@waweb/base-ui.theme.fonts.adobe-clean/0.2.1_be6d867c376983ba4bd09d7bec4453cd:
+    resolution: {integrity: sha1-8Lx6sRsa/jTUrdn3RUUe89IhaSw=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.2.1.tgz'}
     peerDependencies:
       '@emotion/react': ^11.7.1
       '@testing-library/react': ^12.0.0
@@ -1822,86 +1860,6 @@ packages:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
 
-  registry.npmjs.org/@teambit/base-ui.routing.compare-url/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-57vlN0+yBZFGsX5JLo237OQ3Bu8eeJ+vEVbeQuioJsuvS0zEhI8EyobYssEfyaCMsbpDpbpL6HkfSvuQB0Vtmw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.routing.compare-url/-/base-ui.routing.compare-url-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.routing.compare-url/1.0.0
-    name: '@teambit/base-ui.routing.compare-url'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-      url-parse: registry.npmjs.org/url-parse/1.5.1
-    dev: false
-
-  registry.npmjs.org/@teambit/base-ui.routing.link/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-kJkoNmZqsrXWFyDBM8DXH5IKa7GumBvm9l7mcs8kjawFmBtP+LnunV/KJozwQtuNTjmizMYwq8+6IWAV365RLA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.routing.link/-/base-ui.routing.link-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.routing.link/1.0.0
-    name: '@teambit/base-ui.routing.link'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@teambit/base-ui.routing.native-link': registry.npmjs.org/@teambit/base-ui.routing.native-link/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/base-ui.routing.routing-provider': registry.npmjs.org/@teambit/base-ui.routing.routing-provider/1.0.0_react-dom@17.0.2+react@17.0.2
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  registry.npmjs.org/@teambit/base-ui.routing.native-link/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-yrkm02UxkeCBWyLQC9MG7Jl6JbQrsIBz+9c57mZqAjEcVvQWY2mB3lEY+pNZAuIyOg55/DTqKR1bKQKl6ZAdzg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.routing.native-link/-/base-ui.routing.native-link-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.routing.native-link/1.0.0
-    name: '@teambit/base-ui.routing.native-link'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  registry.npmjs.org/@teambit/base-ui.routing.native-nav-link/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-elXAzsYT7e7Y6/2n5Xv0iYS48ITG2KDBcrtUifxSlVob3zyRbaX18M6wPrHyD9z9XXwqyxEJreTKL1Gt9IdEaA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.routing.native-nav-link/-/base-ui.routing.native-nav-link-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.routing.native-nav-link/1.0.0
-    name: '@teambit/base-ui.routing.native-nav-link'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@teambit/base-ui.routing.compare-url': registry.npmjs.org/@teambit/base-ui.routing.compare-url/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/base-ui.routing.native-link': registry.npmjs.org/@teambit/base-ui.routing.native-link/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/base-ui.utils.is-browser': registry.npmjs.org/@teambit/base-ui.utils.is-browser/1.0.0_react-dom@17.0.2+react@17.0.2
-      classnames: registry.npmjs.org/classnames/2.3.1
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  registry.npmjs.org/@teambit/base-ui.routing.routing-provider/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-18qOybF12VyqLHbbrHGuzgZx3YRMahiedOMkSDO7fOHQUqCUok0c8LkY3BEenaL3nK0Buy1ih3wNT9GiSWy2MA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.routing.routing-provider/-/base-ui.routing.routing-provider-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.routing.routing-provider/1.0.0
-    name: '@teambit/base-ui.routing.routing-provider'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@teambit/base-ui.routing.native-link': registry.npmjs.org/@teambit/base-ui.routing.native-link/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/base-ui.routing.native-nav-link': registry.npmjs.org/@teambit/base-ui.routing.native-nav-link/1.0.0_react-dom@17.0.2+react@17.0.2
-      '@teambit/base-ui.utils.is-browser': registry.npmjs.org/@teambit/base-ui.utils.is-browser/1.0.0_react-dom@17.0.2+react@17.0.2
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
   registry.npmjs.org/@teambit/base-ui.surfaces.split-pane.hover-splitter/1.0.0_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-sbN1AgGvc3lzoeWg7KQrYD9lCa4V9s0EctfZSrPCwy/UcHGePgMipBOWJkcNwuq8GGhzSTzH8rP8McWCLUGdew==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.surfaces.split-pane.hover-splitter/-/base-ui.surfaces.split-pane.hover-splitter-1.0.0.tgz}
     id: registry.npmjs.org/@teambit/base-ui.surfaces.split-pane.hover-splitter/1.0.0
@@ -2030,20 +1988,6 @@ packages:
     resolution: {integrity: sha512-A2PoEhZ/8GYSeypqIMGK0Hu/bcpfDdquxQtkXZ34bIpXdYaYGn0tHIJTAuxJTInWM+qLMBAHQ32p3qkm86IuDQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.theme.sizes/-/base-ui.theme.sizes-1.0.0.tgz}
     id: registry.npmjs.org/@teambit/base-ui.theme.sizes/1.0.0
     name: '@teambit/base-ui.theme.sizes'
-    version: 1.0.0
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  registry.npmjs.org/@teambit/base-ui.utils.is-browser/1.0.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-xvMmDLJFXqO0WwEYtM+zipMFQ7yaQLxDWmUynehfrBERSA8ZaeVfR8DiTPV/X3nRM/OD2Cym4f6UZPhcXLXJeg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/base-ui.utils.is-browser/-/base-ui.utils.is-browser-1.0.0.tgz}
-    id: registry.npmjs.org/@teambit/base-ui.utils.is-browser/1.0.0
-    name: '@teambit/base-ui.utils.is-browser'
     version: 1.0.0
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -6238,15 +6182,6 @@ packages:
     name: universalify
     version: 0.1.2
     engines: {node: '>= 4.0.0'}
-    dev: false
-
-  registry.npmjs.org/url-parse/1.5.1:
-    resolution: {integrity: sha512-HOfCOUJt7iSYzEx/UqgtwKRMC6EU91NFhsCHMv9oM03VJcVo2Qrp8T8kI9D7amFf1cu+/3CEhgb3rF9zL7k85Q==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/url-parse/-/url-parse-1.5.1.tgz}
-    name: url-parse
-    version: 1.5.1
-    dependencies:
-      querystringify: registry.npmjs.org/querystringify/2.2.0
-      requires-port: registry.npmjs.org/requires-port/1.0.0
     dev: false
 
   registry.npmjs.org/url-parse/1.5.4:

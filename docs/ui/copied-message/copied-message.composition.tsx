@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CopiedMessage } from './copied-message';
 import { Icon } from '@waweb/base-ui.elements.icon';
-import { H5 } from '@waweb/docs.ui.heading';
+import { H5 } from '@waweb/base-ui.text.heading';
 
 export const CopiedMessageExample = () => {
   return (
@@ -23,7 +23,7 @@ export const HiddenCopiedMessageExample = () => {
       <H5>Click icon to copy</H5>
       <Icon
         onClick={handleClick}
-        of="copy-cmp"
+        of="content_copy"
         style={{ marginRight: 60, cursor: 'pointer' }}
       />
       <CopiedMessage show={isCopied} />

@@ -58,7 +58,7 @@ export function Welcome() {
           link="https://harmony-docs.bit.dev/building-with-bit/consuming-components"
           heading="Install"
           text="install components from elsewhere"
-          command="bit install @teambit/design.templates.ui.external-link"
+          command="bit install @waweb/mdx.ui.docs.link"
         />
         <Card
           link="https://harmony-docs.bit.dev/building-with-bit/consuming-components#import-components"
