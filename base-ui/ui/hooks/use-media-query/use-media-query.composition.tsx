@@ -2,12 +2,11 @@ import React from 'react';
 import { useMediaQuery } from './use-media-query';
 
 export const BasicuseMediaQuery = () => {
-  const { count, increment } = useMediaQuery();
-
+  const matches = useMediaQuery('(min-width: 240px) and (max-width: 767px)');
   return (
     <>
-      <h1>The count is {count}</h1>
-      <button onClick={increment}>increment</button>
+      <h1>matches (min-width: 240px) and (max-width: 767px)?</h1>
+      <h2>{matches}</h2>
     </>
   );
 };

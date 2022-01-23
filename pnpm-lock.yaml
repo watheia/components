@@ -24,14 +24,9 @@ importers:
       '@spectrum-css/fieldlabel': ^4.0.9
       '@spectrum-css/link': ^3.1.12
       '@spectrum-css/page': ^5.0.0
-      '@spectrum-css/pagination': 5.0.0
-      '@spectrum-css/popover': 5.0.0
-      '@spectrum-css/progressbar': 1.0.13
-      '@spectrum-css/progresscircle': 1.0.11
-      '@spectrum-css/radio': 3.0.12
-      '@spectrum-css/textfield': 3.1.3
-      '@spectrum-css/typography': 4.0.9
-      '@spectrum-css/well': 3.0.11
+      '@spectrum-css/typography': ^4.0.9
+      '@spectrum-css/vars': ^6.0.0
+      '@spectrum-css/well': ^3.0.11
       '@teambit/design.ui.external-link': 0.0.344
       '@teambit/documenter.markdown.hybrid-live-code-snippet': 0.1.3
       '@teambit/documenter.markdown.mdx': 0.1.8
@@ -40,6 +35,7 @@ importers:
       '@teambit/html.modules.render-template': 0.0.95
       '@teambit/mdx.ui.mdx-scope-context': 0.0.368
       '@testing-library/react': ^12.0.0
+      '@testing-library/react-hooks': 7.0.2
       '@types/jest': 26.0.20
       '@types/lodash': ^4.14.178
       '@types/node': 12.20.4
@@ -61,7 +57,6 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0
       '@waweb/base-ui.theme.color-definition': 0.1.0
       '@waweb/base-ui.theme.colors': 0.1.0
-      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1
       '@waweb/base-ui.theme.fonts.book': 0.1.0
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0
@@ -113,14 +108,9 @@ importers:
       '@spectrum-css/fieldlabel': registry.npmjs.org/@spectrum-css/fieldlabel/4.0.9_@spectrum-css+vars@6.0.0
       '@spectrum-css/link': registry.npmjs.org/@spectrum-css/link/3.1.12_@spectrum-css+vars@6.0.0
       '@spectrum-css/page': registry.npmjs.org/@spectrum-css/page/5.0.0
-      '@spectrum-css/pagination': registry.npmjs.org/@spectrum-css/pagination/5.0.0_757bc25453549bb615eccd6aad1b97a4
-      '@spectrum-css/popover': registry.npmjs.org/@spectrum-css/popover/5.0.0_@spectrum-css+dialog@5.0.0
-      '@spectrum-css/progressbar': registry.npmjs.org/@spectrum-css/progressbar/1.0.13_@spectrum-css+fieldlabel@4.0.9
-      '@spectrum-css/progresscircle': registry.npmjs.org/@spectrum-css/progresscircle/1.0.11
-      '@spectrum-css/radio': registry.npmjs.org/@spectrum-css/radio/3.0.12
-      '@spectrum-css/textfield': registry.npmjs.org/@spectrum-css/textfield/3.1.3
-      '@spectrum-css/typography': registry.npmjs.org/@spectrum-css/typography/4.0.9
-      '@spectrum-css/well': registry.npmjs.org/@spectrum-css/well/3.0.11
+      '@spectrum-css/typography': registry.npmjs.org/@spectrum-css/typography/4.0.9_@spectrum-css+vars@6.0.0
+      '@spectrum-css/vars': registry.npmjs.org/@spectrum-css/vars/6.0.0
+      '@spectrum-css/well': registry.npmjs.org/@spectrum-css/well/3.0.11_@spectrum-css+vars@6.0.0
       '@teambit/design.ui.external-link': registry.npmjs.org/@teambit/design.ui.external-link/0.0.344_react-dom@17.0.2+react@17.0.2
       '@teambit/documenter.markdown.hybrid-live-code-snippet': registry.npmjs.org/@teambit/documenter.markdown.hybrid-live-code-snippet/0.1.3_b3482aaf5744fc7c2aeb7941b0e0a78f
       '@teambit/documenter.markdown.mdx': registry.npmjs.org/@teambit/documenter.markdown.mdx/0.1.8_b3482aaf5744fc7c2aeb7941b0e0a78f
@@ -144,7 +134,6 @@ importers:
       '@waweb/base-ui.theme.brand-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.color-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.colors': 0.1.0_react-dom@17.0.2+react@17.0.2
-      '@waweb/base-ui.theme.fonts.adobe-clean-serif': 0.1.1_be6d867c376983ba4bd09d7bec4453cd
       '@waweb/base-ui.theme.fonts.book': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.fonts.roboto': 0.1.0_react-dom@17.0.2+react@17.0.2
       '@waweb/base-ui.theme.heading-margin-definition': 0.1.0_react-dom@17.0.2+react@17.0.2
@@ -176,15 +165,13 @@ importers:
       yaml: registry.npmjs.org/yaml/1.10.2
     devDependencies:
       '@teambit/html.modules.render-template': registry.npmjs.org/@teambit/html.modules.render-template/0.0.95
+      '@testing-library/react-hooks': registry.npmjs.org/@testing-library/react-hooks/7.0.2_react-dom@17.0.2+react@17.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.38
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
       chai: registry.npmjs.org/chai/4.3.0
-
-  base-ui/elements/icon:
-    specifiers: {}
 
   base-ui/text/heading:
     specifiers: {}
@@ -196,9 +183,6 @@ importers:
     specifiers: {}
 
   base-ui/theme/fonts/adobe-clean-serif:
-    specifiers: {}
-
-  base-ui/theme/icons-font:
     specifiers: {}
 
   base-ui/theme/theme-provider:
@@ -231,32 +215,6 @@ importers:
   docs/theme/docs-theme:
     specifiers: {}
 
-  docs/theme/theme-compositions:
-    specifiers: {}
-
-  docs/theme/theme-context:
-    specifiers:
-      '@babel/runtime': 7.12.18
-      '@types/jest': ^26.0.0
-      '@types/node': 12.20.4
-      '@types/react': ^17.0.8
-      '@types/react-dom': ^17.0.5
-      '@types/testing-library__jest-dom': 5.9.5
-      '@waweb/base-ui.theme.fonts.roboto': 0.1.0
-      clsx: 1.1.1
-      core-js: ^3.0.0
-    dependencies:
-      '@waweb/base-ui.theme.fonts.roboto': 0.1.0_react-dom@17.0.2+react@17.0.2
-      clsx: registry.npmjs.org/clsx/1.1.1
-      core-js: registry.npmjs.org/core-js/3.20.3
-    devDependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
-      '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/17.0.38
-      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
-      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
-
   docs/ui/copied-message:
     specifiers: {}
 
@@ -273,12 +231,6 @@ importers:
     specifiers: {}
 
   docs/ui/paragraph:
-    specifiers: {}
-
-  documenter/markdown/mdx:
-    specifiers: {}
-
-  envs/mdx-document:
     specifiers: {}
 
   envs/wa-react:
@@ -315,6 +267,12 @@ importers:
     specifiers: {}
 
   spectrum/ui/organisms/provider:
+    specifiers: {}
+
+  spectrum/ui/util/breakpoint:
+    specifiers: {}
+
+  spectrum/ui/util/slots:
     specifiers: {}
 
   tools/mdx-compiler:
@@ -494,65 +452,6 @@ packages:
       react-dom: ^16.8.0 || ^17.0.0
     dependencies:
       core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  /@waweb/base-ui.theme.fonts.adobe-clean-serif/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
-    resolution: {integrity: sha1-PVyv4XuhlHc5Tm3Bvx1wASHtRAc=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean-serif/-/@waweb-base-ui.theme.fonts.adobe-clean-serif-0.1.1.tgz'}
-    peerDependencies:
-      '@emotion/react': ^11.7.1
-      '@testing-library/react': ^12.0.0
-      '@types/lodash': 4.14.178
-      lodash: 4.17.21
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
-      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
-      '@waweb/base-ui.theme.fonts.adobe-clean': 0.2.1_be6d867c376983ba4bd09d7bec4453cd
-      clsx: registry.npmjs.org/clsx/1.1.1
-      core-js: registry.npmjs.org/core-js/3.20.3
-      lodash: registry.npmjs.org/lodash/4.17.21
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  /@waweb/base-ui.theme.fonts.adobe-clean/0.1.1_be6d867c376983ba4bd09d7bec4453cd:
-    resolution: {integrity: sha1-jcOprJrbvISo3/liBo8Gd7tWGSo=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.1.1.tgz'}
-    peerDependencies:
-      '@emotion/react': ^11.7.1
-      '@testing-library/react': ^12.0.0
-      '@types/lodash': 4.14.178
-      lodash: 4.17.21
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
-      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
-      core-js: registry.npmjs.org/core-js/3.20.3
-      lodash: registry.npmjs.org/lodash/4.17.21
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
-  /@waweb/base-ui.theme.fonts.adobe-clean/0.2.1_be6d867c376983ba4bd09d7bec4453cd:
-    resolution: {integrity: sha1-8Lx6sRsa/jTUrdn3RUUe89IhaSw=, tarball: '@waweb/base-ui.theme.fonts.adobe-clean/-/@waweb-base-ui.theme.fonts.adobe-clean-0.2.1.tgz'}
-    peerDependencies:
-      '@emotion/react': ^11.7.1
-      '@testing-library/react': ^12.0.0
-      '@types/lodash': 4.14.178
-      lodash: 4.17.21
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      '@emotion/react': registry.npmjs.org/@emotion/react/11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
-      '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
-      '@types/lodash': registry.npmjs.org/@types/lodash/4.14.178
-      core-js: registry.npmjs.org/core-js/3.20.3
-      lodash: registry.npmjs.org/lodash/4.17.21
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
@@ -974,6 +873,7 @@ packages:
     version: 7.12.18
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.9
+    dev: false
 
   registry.npmjs.org/@babel/runtime/7.16.7:
     resolution: {integrity: sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/runtime/-/runtime-7.16.7.tgz}
@@ -982,7 +882,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.9
-    dev: false
 
   registry.npmjs.org/@babel/template/7.16.7:
     resolution: {integrity: sha512-I8j/x8kHUrbYRTUxXrrMbfCa7jxkE7tZre39x3kjr9hvI82cK1FfqLygotcWN5kdPGWcLdWMHpSBavse5tWw3w==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@babel/template/-/template-7.16.7.tgz}
@@ -1794,21 +1693,9 @@ packages:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
 
-    id: registry.npmjs.org/@teambit/design.theme.icons-font/1.0.2
-    name: '@teambit/design.theme.icons-font'
-    version: 1.0.2
-    engines: {node: '>=12.22.0'}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.20.3
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-    dev: false
-
   registry.npmjs.org/@teambit/design.ui.external-link/0.0.344_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-LISsva3Y1ZGT8RIjyBj/pTANRrFwFA5OmP1uGtZ1qxfXY9ZaOs7/s5JKeB/KRLIwu4UH91C/0+4RLyHB8BK6cw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/design.ui.external-link/-/design.ui.external-link-0.0.344.tgz}
+    id: registry.npmjs.org/@teambit/design.ui.external-link/0.0.344
     name: '@teambit/design.ui.external-link'
     version: 0.0.344
     engines: {node: '>=12.15.0'}
@@ -2408,6 +2295,31 @@ packages:
       pretty-format: registry.npmjs.org/pretty-format/27.4.6
     dev: false
 
+  registry.npmjs.org/@testing-library/react-hooks/7.0.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-dYxpz8u9m4q1TuzfcUApqi8iFfR6R0FaMbr2hjZJy1uC8z+bO/K4v8Gs9eogGKYQop7QsrBTFkv/BCF7MzD2Cg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@testing-library/react-hooks/-/react-hooks-7.0.2.tgz}
+    id: registry.npmjs.org/@testing-library/react-hooks/7.0.2
+    name: '@testing-library/react-hooks'
+    version: 7.0.2
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+      react-test-renderer: '>=16.9.0'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-test-renderer:
+        optional: true
+    dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.16.7
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.11
+      '@types/react-test-renderer': registry.npmjs.org/@types/react-test-renderer/17.0.1
+      react: registry.npmjs.org/react/17.0.2
+      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
+      react-error-boundary: registry.npmjs.org/react-error-boundary/3.1.4_react@17.0.2
+    dev: true
+
   registry.npmjs.org/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-ihQiEOklNyHIpo2Y8FREkyD1QAea054U0MVbwH1m8N9TxeFz+KoJ9LkqoKqJlzx2JDm56DVwaJ1r36JYxZM05g==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@testing-library/react/-/react-12.1.2.tgz}
     id: registry.npmjs.org/@testing-library/react/12.1.2
@@ -2549,6 +2461,14 @@ packages:
     dependencies:
       '@types/react': registry.npmjs.org/@types/react/17.0.38
     dev: false
+
+  registry.npmjs.org/@types/react-test-renderer/17.0.1:
+    resolution: {integrity: sha512-3Fi2O6Zzq/f3QR9dRnlnHso9bMl7weKCviFmfF6B4LS1Uat6Hkm15k0ZAQuDz+UBq6B3+g+NM6IT2nr5QgPzCw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react-test-renderer/-/react-test-renderer-17.0.1.tgz}
+    name: '@types/react-test-renderer'
+    version: 17.0.1
+    dependencies:
+      '@types/react': registry.npmjs.org/@types/react/17.0.38
+    dev: true
 
   registry.npmjs.org/@types/react-transition-group/4.4.4:
     resolution: {integrity: sha512-7gAPz7anVK5xzbeQW9wFBDg7G++aPLAFY0QaSMOou9rJZpbuI58WAuJrgu+qR92l61grlnCUe7AFX8KGahAgug==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.4.tgz}
@@ -5137,6 +5057,19 @@ packages:
       react: registry.npmjs.org/react/17.0.2
       scheduler: registry.npmjs.org/scheduler/0.20.2
     dev: false
+
+  registry.npmjs.org/react-error-boundary/3.1.4_react@17.0.2:
+    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/react-error-boundary/-/react-error-boundary-3.1.4.tgz}
+    id: registry.npmjs.org/react-error-boundary/3.1.4
+    name: react-error-boundary
+    version: 3.1.4
+    engines: {node: '>=10', npm: '>=6'}
+    peerDependencies:
+      react: '>=16.13.1'
+    dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.16.7
+      react: registry.npmjs.org/react/17.0.2
+    dev: true
 
   registry.npmjs.org/react-fast-compare/3.2.0:
     resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz}

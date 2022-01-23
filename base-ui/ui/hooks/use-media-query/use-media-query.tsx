@@ -14,9 +14,9 @@ import { useEffect, useState } from 'react';
 import { useIsSSR } from '@react-aria/ssr';
 
 export function useMediaQuery(query: string) {
-  let supportsMatchMedia =
+  const supportsMatchMedia =
     typeof window !== 'undefined' && typeof window.matchMedia === 'function';
-  let [matches, setMatches] = useState(() =>
+  const [matches, setMatches] = useState(() =>
     supportsMatchMedia ? window.matchMedia(query).matches : false
   );
 
@@ -25,8 +25,8 @@ export function useMediaQuery(query: string) {
       return;
     }
 
-    let mq = window.matchMedia(query);
-    let onChange = (evt) => {
+    const mq = window.matchMedia(query);
+    const onChange = (evt) => {
       setMatches(evt.matches);
     };
 
@@ -38,6 +38,6 @@ export function useMediaQuery(query: string) {
 
   // If in SSR, the media query should never match. Once the page hydrates,
   // this will update and the real value will be returned.
-  let isSSR = useIsSSR();
+  const isSSR = useIsSSR();
   return isSSR ? false : matches;
 }

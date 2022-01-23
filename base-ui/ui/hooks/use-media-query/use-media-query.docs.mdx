@@ -5,19 +5,18 @@ labels: ['hook', 'counter']
 
 import { useMediaQuery } from './use-media-query';
 
-## A React Hook to increment a count
+## A React Hook to run media quries
 
-Increments the state of `count` by 1 each time `increment` is called
+Returns true or false depending on the provided media query.
 
 ### Component usage
 
 In this example clicking the button calls `increment` which increments the `count` by 1
 
-```js
+```jsx live
 import { useMediaQuery } from './use-media-query';
 
-const { count, increment } = useMediaQuery();
-
-<h1>The count is {count}</h1>
-<button onClick={increment}>increment</button>
+const matches = useMediaQuery('(min-width: 240px) and (max-width: 767px)');
+<h1>matches (min-width: 240px) and (max-width: 767px)?</h1>
+<h2>{matches}</h2>
 ```

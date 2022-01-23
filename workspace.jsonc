@@ -43,6 +43,7 @@
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@teambit/harmony": "0.2.11",
         "@teambit/html.modules.render-template": "0.0.95",
+        "@testing-library/react-hooks": "7.0.2",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "@waweb/base-ui.input.error": "0.1.1",
         "@waweb/base-ui.layout.breakpoints": "0.1.0",
