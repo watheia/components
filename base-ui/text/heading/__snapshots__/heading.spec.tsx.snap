@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render as h2 when defined 1`] = `
+<h2
+  class="h2 lg"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H2 Example
+</h2>
+`;
+
+exports[`should render as h3 when defined 1`] = `
+<h3
+  class="h3 md"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H3 Example
+</h3>
+`;
+
+exports[`should render as h4 when defined 1`] = `
+<h4
+  class="h4 sm"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H4 Example
+</h4>
+`;
+
+exports[`should render as h5 when defined 1`] = `
+<h5
+  class="h5 xs"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H5 Example
+</h5>
+`;
+
+exports[`should render as h6 when defined 1`] = `
+<h6
+  class="h6 xxs"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H6 Example
+</h6>
+`;
+
+exports[`should render correct text in Example 1`] = `
+<h1
+  class="h1 lg"
+  data-bit-id="waweb.base-ui/text/heading"
+>
+  H1 Example
+</h1>
+`;

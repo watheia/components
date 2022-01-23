@@ -25,7 +25,6 @@ export function AdobeCleanSerif({
   fontStyle = 'normal',
   ...props
 }: AdobeCleanSerifProps) {
-  //convert from camel case to pascal case to get font asset name
   // use assigned className, or construct from component props
   const className = clsx({
     regular: weight === 'normal' && fontStyle === 'normal',
@@ -35,6 +34,8 @@ export function AdobeCleanSerif({
     black: weight === 'black' && fontStyle === 'normal',
     blackIt: weight === 'black' && fontStyle === 'italic',
   }) as AdobeCleanSerifClass;
+
+  //convert from camel case to pascal case to get font asset name
   const fontName = startCase(camelCase(className)).replace(/ /g, '');
 
   return (

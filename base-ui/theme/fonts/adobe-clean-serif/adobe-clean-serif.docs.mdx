@@ -4,20 +4,14 @@ labels: ['spectrum', 'typography', 'webfonts']
 ---
 
 import {
-  AdobeCleanLight,
-  AdobeCleanLightIt,
-  AdobeCleanSemiLight,
-  AdobeCleanSemiLightIt,
-  AdobeClean,
-  AdobeCleanIt,
-  AdobeCleanBold,
-  AdobeCleanBoldIt,
-  AdobeCleanExtraBold,
-  AdobeCleanExtraBoldIt,
-  AdobeCleanBlack,
-  AdobeCleanBlackIt,
+  AdobeCleanSerif,
+  AdobeCleanSerifIt,
+  AdobeCleanSerifBold,
+  AdobeCleanSerifBoldIt,
+  AdobeCleanSerifBlack,
+  AdobeCleanSerifBlackIt,
   adobeCleanSerif,
-} from './adobe-clean-serif';
+} from '.';
 
 Provides individual font faces for the `Adobe Clean` font family.
 
@@ -33,8 +27,6 @@ font family, or any of the exported class names to style text blocks
   <AdobeCleanSerifIt />
   <AdobeCleanSerifBold />
   <AdobeCleanSerifBoldIt />
-  <AdobeCleanSerifExtraBold />
-  <AdobeCleanSerifExtraBoldIt />
   <AdobeCleanSerifBlack />
   <AdobeCleanSerifBlackIt />
   <div style={{ fontFamily: 'Adobe Clean Serif' }}>
@@ -47,6 +39,9 @@ font family, or any of the exported class names to style text blocks
         0123456789.:,;()*!?'@#&lt;&gt;$%&amp;^+-=~
       </span>
     </p>
+    <p className={adobeCleanSerif.regular}>
+      The quick brown fox jumps over the lazy dog.
+    </p>
     <p className={adobeCleanSerif.it}>
       The quick brown fox jumps over the lazy dog.
     </p>
@@ -54,12 +49,6 @@ font family, or any of the exported class names to style text blocks
       The quick brown fox jumps over the lazy dog.
     </p>
     <p className={adobeCleanSerif.boldIt}>
-      The quick brown fox jumps over the lazy dog.
-    </p>
-    <p className={adobeCleanSerif.extraBold}>
-      The quick brown fox jumps over the lazy dog.
-    </p>
-    <p className={adobeCleanSerif.extraBoldIt}>
       The quick brown fox jumps over the lazy dog.
     </p>
     <p className={adobeCleanSerif.black}>
