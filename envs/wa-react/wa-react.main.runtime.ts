@@ -23,12 +23,14 @@ export class WaReactMain {
        * Your config gets merged with the defaults
        */
 
-      react.overrideTsConfig(tsconfig),
+      react.useTypescript(tsconfig),
       // react.useWebpack({
       //   previewConfig: [previewConfigTransformer],
       //   devServerConfig: [devServerConfigTransformer],
       // }),
-      react.overrideJestConfig(require.resolve('./jest/jest.config')),
+      react.overrideJestConfig(
+        require.resolve(`${__dirname}/jest/jest.config`)
+      ),
 
       /**
        * override the ESLint default config here then check your files for lint errors
