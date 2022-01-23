@@ -151,14 +151,14 @@
      * configures all components with the appropritate build environment
      *
      */
-    "base-ui/theme": {
+    "base-ui/theme, docs/theme": {
       "teambit.react/react": {}
     },
     /**
      * configures components with namespaces 'entities', 'modules' and 'functions' to use the
      * default NodeJS dev environment.
      */
-    "{elements/**}, {ui/**}": {
+    "{elements/**}, {ui/**}, {text/*}": {
       "waweb.envs/wa-react": {},
       "teambit.react/react": "-"
     },

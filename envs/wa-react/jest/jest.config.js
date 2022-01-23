@@ -6,7 +6,7 @@ const reactJestConfig = require('@teambit/react/jest/jest.config');
 const {
   generateNodeModulesPattern,
 } = require('@waweb/tools.packages-excluder');
-const packagesToExclude = ['@waweb', '@teambit'];
+const packagesToExclude = ['@teambit'];
 
 module.exports = {
   ...reactJestConfig,

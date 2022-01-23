@@ -7,7 +7,7 @@ import { WaReactAspect } from './wa-react.aspect';
 /**
  * Uncomment to include config files for overrides of Typescript or Webpack
  */
-const tsconfig = require('./typescript/tsconfig');
+// const tsconfig = require('./typescript/tsconfig');
 
 export class WaReactMain {
   static slots = [];
@@ -23,7 +23,7 @@ export class WaReactMain {
        * Your config gets merged with the defaults
        */
 
-      react.useTypescript(tsconfig),
+      // react.useTypescript(tsconfig),
       // react.useWebpack({
       //   previewConfig: [previewConfigTransformer],
       //   devServerConfig: [devServerConfigTransformer],
